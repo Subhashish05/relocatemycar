@@ -25,6 +25,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			</div>
 			<div class="col-12 align-self-end">
 				<form action="" class="header_form pb-3">
+					<div class="col-12 text-center mt-3 border-bottom">
+						<h3 class="text-white fw-bolder">Get a Quote</h3>
+					</div>
 					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
 						<label for="name" class="d-none">Name</label>
 						<input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
@@ -68,28 +71,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="steps">
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
 					</div>
 					<h3>Step 1</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus saepe obcaecati et repudiandae tenetur.</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
 					</div>
 					<h3>Step 2</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa illum est facilis, necessitatibus laboriosam!</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
 					</div>
 					<h3>Step 3</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamu sequi architecto quis voluptas aperiam maxime.</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
 					</div>
 					<h3>Step 4</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minima maiores sunt.</p>
@@ -98,7 +101,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</article>
 
 		<!-- intro -->
-		<article style="background-color: #feffea;">
+		<article style="background-color: #00aeef10;">
 			<div class="container d-flex flex-column align-items-center py-50">
 				<h2 class="text-center theme_text col-sm-6">Why Choose Car Relocation.</h2>
 				<div class="text-center col-sm-8">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
@@ -119,7 +122,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="text-center col-sm-8">Discover the perfect fit for your budget! Our Transportation Rates section lays out all the details you need to know about moving your car hassle-free.</div>
 
 			<div class="col-12 mt-5 table-responsive">
-				<table class="table table-warning table-striped table-hover">
+				<table class="table table-primary table-striped table-hover shadow">
 					<thead>
 						<tr>
 							<td><b>Distance</b></td>
@@ -303,51 +306,69 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</article>
 
 		<!-- services -->
-		<article style="background-color: #393939;">
-			<div class="container d-flex flex-column align-items-center py-50">
+		<article style="background-color: #33333390; box-shadow: inset 0 0 16px #000000bb">
+			<div class="px-1 px-md-3 px-lg-5 d-flex flex-column align-items-center py-50">
 				<h2 class="text-center theme_text col-sm-6">Ours Services</h2>
 				<div class="text-center col-sm-8 text-white">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
 				<div class="services">
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
-					<div class="service_card">
-						<img src="" alt="service image" class="service_img">
-						<div class="service_desc">
-							<h4>Service Heading</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+					<div class="col-md-6 col-12">
+						<div class="service_card">
+							<img src="<?php echo base_url('image/car-oil.png') ?>" alt="service image" class="service_img">
+							<div class="service_desc">
+								<h4>Service Heading</h4>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
+								<button type="button" class="theme_btn rounded-2">Learn More</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -419,24 +440,49 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</div>
 			</div>
 		</section>
+		
 		<div class="col-12 border-bottom"></div>
 		<!-- locations -->
 		<section class="container d-flex flex-column align-items-center py-50">
 			<h2 class="text-center theme_text col-sm-6">Where We Transport Vehicles</h2>
 			<div class="text-center col-sm-8">We transport vehicles nationwide, covering major cities, specialized routes, and remote areas for comprehensive relocation.</div>
 			<div class="d-flex flex-wrap mt-5">
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Mumbai</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Delhi</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Kolkata</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Chennai</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Bangalore</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Hyderabad</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Ahmedabad</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Pune</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Surat</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Jaipur</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Lucknow</a></div>
-				<div class="location_link col-lg-3 col-md-6 col-12"><a href="<?php echo base_url('pages/location') ?>">packers and movers Kanpur</a></div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Mumbai</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Delhi</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Kolkata</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Chennai</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Bangalore</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Hyderabad</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Ahmedabad</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Pune</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Surat</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Jaipur</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Lucknow</a>
+				</div>
+				<div class="location_link col-lg-3 col-md-6 col-12">
+					<a href="<?php echo base_url('pages/location') ?>">packers and movers Kanpur</a>
+				</div>
 			</div>
 		</section>
 	</main>

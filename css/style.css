@@ -19,9 +19,24 @@ a{
 p{
     margin-bottom: 0;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: var(--theme-color);
+}
 .py-50{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (width < 768px) {
+    .py-50{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 .theme_underline{
     position: relative;
@@ -93,6 +108,23 @@ nav > a > img{
     align-items: center;
     padding-left: 20px;
     flex: 0 1 400px;
+}
+.nav_links > li > a {
+    position: relative;
+}
+.nav_links > li > a::after{
+    content: '';
+    position: absolute;
+    background: var(--theme-color);
+    bottom: -2px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    transition: all 250ms ease;
+}
+.nav_links > li > a:hover::after{
+    right: 0%;
+    left: 0%;
 }
 .mobile_nav{
     display: none;

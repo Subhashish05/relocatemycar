@@ -11,8 +11,8 @@
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    background: #00aeef38;
-    border: 1px solid var(--theme-color);
+    background: #00afef21;
+    border: 2px solid #00afef75;
     border-radius: 5px;
     backdrop-filter: blur(5px);
 }
@@ -39,6 +39,10 @@
     justify-content: center;
     margin-bottom: 15px;
 }
+.steps > div > .step_img > img{
+    height: auto;
+    width: 50px;
+}
 .steps > div > h3{
     font-size: 18px;
     text-transform: uppercase;
@@ -50,7 +54,7 @@
 }
 .article_first_letter{
     text-align: justify;
-    color: #48585b;
+    color: #04252b;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -64,36 +68,35 @@
     font-weight: 700;
     color: var(--theme-color);
 }
-.service_card{
+.services{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+.services > *{
+    padding: 15px;
+}
+.service_card{
     padding: 25px 50px;
-    margin: 40px auto;
-    background: #666;
+    background: #00afef86;
     border-radius: 5px;
     color: #fff;
-    box-shadow: 0px 0px 12px #00000050;
+    box-shadow: 0px 0px 12px #000000bb;
 }
-.service_card:nth-child(2n){
-    flex-direction: row-reverse;
-}
-.service_img{
-    width: 40%;
-    margin: 0 auto;
-}
-.service_desc{
-    width: 60%;
+.service_card > img{
+    padding-bottom: 25px;
 }
 .service_desc > h4{
     text-align: center;
-    color: var(--theme-color);
-    border-bottom: 2px solid #555;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
     text-transform: uppercase;
     font-weight: 500;
 }
 .service_desc > p{
     text-align: justify;
     line-height: 20px;
+    margin: 15px auto;
     letter-spacing: 1px;
 }
 @media (width < 768px) {
@@ -112,14 +115,17 @@
     margin: 25px auto;
     border-radius: 5px;
     border: 1px solid #cccccc;
+    overflow: hidden;
 }
 .questions{
     background: var(--theme-color);
     padding: 5px 15px;
+    font-weight: 600;
 }
 .ans{
     padding: 10px 15px 15px 25px;
-    box-shadow: inset 0 0 12px #ccc;
+    box-shadow: inset 0 0 12px #7a7a7a;
+    background: #eeeeee75;
 }
 .location_link{
     padding: 10px 15px;
@@ -136,4 +142,7 @@
     top: 50%;
     left: -2px;
     transform: translateY(-50%);
+}
+.location_link:hover > a{
+    color: var(--theme-color);
 }
