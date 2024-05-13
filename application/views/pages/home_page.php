@@ -306,7 +306,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</article>
 
 		<!-- services -->
-		<article style="background-color: #33333390; box-shadow: inset 0 0 16px #000000bb">
+		<article style="background-color: #353535; box-shadow: inset 0 0 16px -4px #000000">
 			<div class="px-1 px-md-3 px-lg-5 d-flex flex-column align-items-center py-50">
 				<h2 class="text-center theme_text col-sm-6">Ours Services</h2>
 				<div class="text-center col-sm-8 text-white">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
@@ -317,7 +317,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -327,7 +327,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -337,7 +337,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -347,7 +347,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -357,7 +357,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -367,7 +367,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="service_desc">
 								<h4>Service Heading</h4>
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus qui dignissimos quos officia esse hic quidem, facere quae repudiandae ex totam mollitia, dolorem animi labore autem, dicta nihil officiis dolorum laboriosam. Magnam veritatis nulla quia perspiciatis enim mollitia provident in quos obcaecati, vitae deleniti accusantium natus ducimus, possimus odit?</p>
-								<button type="button" class="theme_btn rounded-2">Learn More</button>
+								<button type="button" class="theme_btn rounded-2 align-self-end">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -487,6 +487,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</section>
 	</main>
 	<footer class="text-center theme_bg">all copyright reserved @2024</footer>
+	<script>
+        const ques = document.querySelectorAll(".questions");
+        ques.forEach( e => {
+            e.addEventListener('click', () =>{
+                if(e.classList[1] !== 'open'){
+                    e.nextElementSibling.style.height = e.nextElementSibling.scrollHeight+25 +'px';
+                }else{
+                    e.nextElementSibling.style.height = 0 +'px';
+                }
+                e.classList.toggle('open');
+                e.nextElementSibling.classList.toggle('open');
+            })
+        })
+    </script>
 </body>
 
 </html>

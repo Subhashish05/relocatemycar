@@ -1,0 +1,114 @@
+.banner{
+    width: 100%;
+    height: calc(80vh - 64px);
+    background: #858585;
+    position: relative;
+    margin-bottom: 60px;
+}
+.text-container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #000000d3 -50%, #0000 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.text-container > h1{
+    width: 75%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 40px;
+}
+.text-container > p{
+    font-size: 24px;
+    padding-left: 25px;
+    width: 75%;
+}
+.banner > form{
+    background: #fff;
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -4px #00000040;
+}
+.review_img{
+    background: #aaa;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review_txt{
+    font-size: 18px;
+    color: #555;
+    font-family: 'Titillium Web', sans-serif;
+}
+.location{
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0px 5px 15px;
+    position: relative;
+}
+.location:hover{
+    color: var(--theme-color);
+}
+.location::before{
+    position: absolute;
+    content: '';
+    aspect-ratio: 1;
+    width: 10px;
+    border-radius: 50%;
+    background: #999;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.faq_card{
+    margin: 25px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.questions{
+    background: #eee;
+    padding: 5px 15px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.questions::after{
+    position: absolute;
+    right: 40px;
+    top: 35%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border: none;
+    border-top: 2px solid #333;  
+    border-right: 2px solid #333; 
+    transform: rotateZ(135deg);
+    transition: transform 250ms;
+}
+.open.questions::after{
+    transform: rotateZ(315deg);
+  }
+.ans{
+    height: 0px;
+    overflow: hidden;
+    box-shadow: inset 0 0 12px #7a7a7a;
+    background: #eeeeee75;
+    transition: height 250ms ease;
+}
+.ans.open{
+    padding: 10px 15px 15px 25px;
+}

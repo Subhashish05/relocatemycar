@@ -1,6 +1,6 @@
 .hero_section{
-    min-height: calc(100vh - 75px);
-    margin-top: 75px;
+    min-height: calc(100vh - 64px);
+    margin-top: 64px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -81,13 +81,28 @@
     background: #00afef86;
     border-radius: 5px;
     color: #fff;
+    overflow-x: hidden;
     box-shadow: 0px 0px 12px #000000bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service_card > img{
     padding-bottom: 25px;
+    width: 75%;
+    height: auto;
+    object-position: center;
+    object-fit: contain;
+    filter: drop-shadow(0 0 12px #3d3d3d);
+}
+.service_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service_desc > h4{
     text-align: center;
+    width: 100%;
     color: #fff;
     border-bottom: 1px solid #ddd;
     text-transform: uppercase;
@@ -114,18 +129,41 @@
 .faq_card{
     margin: 25px auto;
     border-radius: 5px;
-    border: 1px solid #cccccc;
-    overflow: hidden;
+    border: 1px solid #ddd;
 }
 .questions{
-    background: var(--theme-color);
+    background: #eee;
     padding: 5px 15px;
     font-weight: 600;
+    position: relative;
+    cursor: pointer;
 }
+.questions::after{
+    position: absolute;
+    right: 40px;
+    top: 35%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border: none;
+    border-top: 2px solid #333;  
+    border-right: 2px solid #333; 
+    transform: rotateZ(135deg);
+    transition: transform 250ms;
+}
+.open.questions::after{
+    transform: rotateZ(315deg);
+  }
 .ans{
-    padding: 10px 15px 15px 25px;
+    height: 0px;
+    overflow: hidden;
     box-shadow: inset 0 0 12px #7a7a7a;
     background: #eeeeee75;
+    transition: height 250ms ease;
+}
+.ans.open{
+    padding: 10px 15px 15px 25px;
 }
 .location_link{
     padding: 10px 15px;

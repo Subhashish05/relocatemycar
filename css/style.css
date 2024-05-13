@@ -83,7 +83,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 75px;
+    height: 64px;
     padding: 10px 50px;
     display: flex;
     align-items: center;
@@ -94,12 +94,12 @@ nav{
 }
 nav > a{
     width: clamp(150px, 70%, 275px);
-    height: 75px;
+    height: 64px;
     display: flex;
     align-items: center;
 }
 nav > a > img{
-    height: 75px;
+    height: 60px;
     width: auto;
 }
 .nav_links{
@@ -173,5 +173,5 @@ nav > a > img{
     letter-spacing: 0.5px;
 }
 header{
-    min-height: 75px;
+    min-height: 64px;
 }
