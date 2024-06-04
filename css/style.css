@@ -1,6 +1,6 @@
 :root{
-    --theme-color: #00aeef;
-    --highlight: #febf01;
+    --theme-color: #eb1424;
+    --highlight: #bdbdbd;
 }
 body{
     padding: 0%;
@@ -129,14 +129,23 @@ nav > a > img{
 .mobile_nav{
     display: none;
 }
+.mobile_nav_link{
+    display: none;
+}
 @media (width <= 768px) {
     nav{
         padding: 10px 20px;
     }
 }
 @media (width <= 540px) {
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
     nav{
         padding: 10px 10px;
+        position: relative;
     }
     .nav_links{
         display: none;
@@ -164,6 +173,42 @@ nav > a > img{
     }
     .mobile_nav.cross > span:nth-child(3){
         transform: rotateZ(-45deg) translateY(-11px);
+    }
+    .mobile_nav_link{
+        display: block;
+        position: fixed;
+        width: clamp(300px, 50vw, 360px);
+        height: 100vh;
+        background: #f8f7f7;
+        top: 0;
+        left: -100%;
+        transition: left 500ms ease-in-out;
+    }
+    .mobile_nav_link.show{
+        left: 0;
+        box-shadow: 12px 0px 20px #00000023;
+    }
+    .mobile_nav_link > p{
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 26px;
+        color: var(--theme-color);
+    }
+    .mobile_nav_links{
+        border-top: 1px solid #555;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--theme-color);
+    }
+    .mobile_nav_links > li{
+        border-bottom: 1px solid #555;
+    }
+    .mobile_nav_links > li > a{
+        padding: 15px;
+        display: block;
     }
 }
 .nav_links > li{

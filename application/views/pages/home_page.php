@@ -19,50 +19,50 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
 	<header>
 		<?php include 'nav.php'; ?>
-		<section class="hero_section px-0 px-lg-5">
-			<div class="col-8 text-center mx-auto">
-				<h1 class="theme_text display-1">Car Relocation in India</h1>
-			</div>
-			<div class="col-12 align-self-end">
-				<form action="" class="header_form pb-3">
-					<div class="col-12 text-center mt-3 border-bottom">
-						<h3 class="text-white fw-bolder">Get a Quote</h3>
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="name" class="d-none">Name</label>
-						<input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="email" class="d-none">E-mail</label>
-						<input type="text" name="email" id="email" class="form-control" placeholder="Enter Your E-mail">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="mobile" class="d-none">Mobile</label>
-						<input type="text" name="mobile" id="mobile" class="form-control" placeholder="Enter Contact Number">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="car" class="d-none">Car Type</label>
-						<input type="text" name="car" id="car" class="form-control" placeholder="Enter Car Type">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="origin" class="d-none">Origin</label>
-						<input type="text" name="origin" id="origin" class="form-control" placeholder="Enter Origin">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="destination" class="d-none">Destination</label>
-						<input type="text" name="destination" id="destination" class="form-control" placeholder="Enter Destination">
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
-						<label for="desc" class="d-none">Description</label>
-						<textarea name="desc" id="desc" rows="1" class="form-control" placeholder="Enter Description"></textarea>
-					</div>
-					<div class="px-3 mt-3 col-12 col-md-6 col-lg-3 text-center">
-						<button type="submit" class="theme_btn rounded-pill w-100">Submit</button>
-					</div>
-				</form>
-			</div>
-		</section>
 	</header>
+	<section class="hero_section px-0 px-lg-5">
+		<div class="col-8 text-center mx-auto">
+			<h1 class="theme_text display-1">Car Relocation in India</h1>
+		</div>
+		<div class="col-12 align-self-end">
+			<form action="" class="header_form pb-3">
+				<div class="col-12 text-center mt-3 border-bottom">
+					<h3 class="text-white fw-bolder">Get a Quote</h3>
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="name" class="d-none">Name</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="email" class="d-none">E-mail</label>
+					<input type="text" name="email" id="email" class="form-control" placeholder="Enter Your E-mail">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="mobile" class="d-none">Mobile</label>
+					<input type="text" name="mobile" id="mobile" class="form-control" placeholder="Enter Contact Number">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="car" class="d-none">Car Type</label>
+					<input type="text" name="car" id="car" class="form-control" placeholder="Enter Car Type">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="origin" class="d-none">Origin</label>
+					<input type="text" name="origin" id="origin" class="form-control" placeholder="Enter Origin">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="destination" class="d-none">Destination</label>
+					<input type="text" name="destination" id="destination" class="form-control" placeholder="Enter Destination">
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3">
+					<label for="desc" class="d-none">Description</label>
+					<textarea name="desc" id="desc" rows="1" class="form-control" placeholder="Enter Description"></textarea>
+				</div>
+				<div class="px-3 mt-3 col-12 col-md-6 col-lg-3 text-center">
+					<button type="submit" class="theme_btn rounded-pill w-100">Submit</button>
+				</div>
+			</form>
+		</div>
+	</section>
 	<main>
 		<!-- how we work -->
 		<article class="container d-flex flex-column align-items-center py-50">
@@ -101,7 +101,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</article>
 
 		<!-- intro -->
-		<article style="background-color: #00aeef10;">
+		<article style="background-color: #f6f6f6;">
 			<div class="container d-flex flex-column align-items-center py-50">
 				<h2 class="text-center theme_text col-sm-6">Why Choose Car Relocation.</h2>
 				<div class="text-center col-sm-8">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
@@ -306,7 +306,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</article>
 
 		<!-- services -->
-		<article style="background-color: #353535; box-shadow: inset 0 0 16px -4px #000000">
+		<article style="background-color: #f6f6f6; box-shadow: inset 0 0 16px -4px #000000">
 			<div class="px-1 px-md-3 px-lg-5 d-flex flex-column align-items-center py-50">
 				<h2 class="text-center theme_text col-sm-6">Ours Services</h2>
 				<div class="text-center col-sm-8 text-white">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
@@ -443,48 +443,50 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		
 		<div class="col-12 border-bottom"></div>
 		<!-- locations -->
-		<section class="container d-flex flex-column align-items-center py-50">
-			<h2 class="text-center theme_text col-sm-6">Where We Transport Vehicles</h2>
-			<div class="text-center col-sm-8">We transport vehicles nationwide, covering major cities, specialized routes, and remote areas for comprehensive relocation.</div>
-			<div class="d-flex flex-wrap mt-5">
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Mumbai</a>
+		<div style="background-color: #f6f6f6;">
+			<section class="container d-flex flex-column align-items-center py-50">
+				<h2 class="text-center theme_text col-sm-6">Where We Transport Vehicles</h2>
+				<div class="text-center col-sm-8">We transport vehicles nationwide, covering major cities, specialized routes, and remote areas for comprehensive relocation.</div>
+				<div class="d-flex flex-wrap mt-5">
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Mumbai</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Delhi</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Kolkata</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Chennai</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Bangalore</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Hyderabad</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Ahmedabad</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Pune</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Surat</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Jaipur</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Lucknow</a>
+					</div>
+					<div class="location_link col-lg-3 col-md-6 col-12">
+						<a href="<?php echo base_url('pages/location') ?>">packers and movers Kanpur</a>
+					</div>
 				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Delhi</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Kolkata</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Chennai</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Bangalore</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Hyderabad</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Ahmedabad</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Pune</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Surat</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Jaipur</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Lucknow</a>
-				</div>
-				<div class="location_link col-lg-3 col-md-6 col-12">
-					<a href="<?php echo base_url('pages/location') ?>">packers and movers Kanpur</a>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 	<footer class="text-center theme_bg">all copyright reserved @2024</footer>
 	<script>

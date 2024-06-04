@@ -1,0 +1,30 @@
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
+    background: #555;
+    color: #fff;
+}
+.banner_text{
+    display: flex;
+    flex-direction: column;
+}
+.banner_text > *{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.banner > .heading{
+    font-size: 48px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto 40px;
+}
+.banner_text i{
+    width: 40px;
+    text-align: center;
+    color: var(--theme-color);
+}

@@ -17,25 +17,53 @@
 }
 .text-container > h1{
     width: 75%;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 700;
     letter-spacing: 1px;
     padding-top: 40px;
 }
 .text-container > p{
     font-size: 24px;
-    padding-left: 25px;
     width: 75%;
 }
 .banner > form{
     background: #fff;
     position: absolute;
-    bottom: -50px;
-    left: 50px;
-    right: 50px;
+    top: 85%;
+    left: 6%;
+    right: 6%;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;
+    justify-content: center;
+    border-radius: 5px;
     box-shadow: 0 0 30px -4px #00000040;
+}
+@media (width < 768px){
+    .banner{
+        margin-bottom: 200px;
+    }
+    .text-container > p{
+        font-size: 20px;
+        width: 75%;
+    }
+    .banner > form{
+        top: 70%;
+    }
+}
+@media (width < 480px){
+    .banner{
+        margin-bottom: 200px;
+    }
+    .text-container > h1{
+        font-size: 30px;
+    }
+    .text-container > p{
+        font-size: 18px;
+        width: 75%;
+    }
+    .banner > form{
+        top: 70%;
+    }
 }
 .review_img{
     background: #aaa;
@@ -76,10 +104,10 @@
 .faq_card{
     margin: 25px auto;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #f0f0f0;
 }
 .questions{
-    background: #eee;
+    background: #f0f0f0;
     padding: 5px 15px;
     font-weight: 600;
     position: relative;
@@ -87,7 +115,7 @@
 }
 .questions::after{
     position: absolute;
-    right: 40px;
+    right: 2%;
     top: 35%;
     content: '';
     width: 10px;

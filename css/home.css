@@ -78,9 +78,8 @@
 }
 .service_card{
     padding: 25px 50px;
-    background: #00afef86;
+    background: #fff;
     border-radius: 5px;
-    color: #fff;
     overflow-x: hidden;
     box-shadow: 0px 0px 12px #000000bb;
     display: flex;
@@ -129,10 +128,10 @@
 .faq_card{
     margin: 25px auto;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #f0f0f0;
 }
 .questions{
-    background: #eee;
+    background: #f0f0f0;
     padding: 5px 15px;
     font-weight: 600;
     position: relative;
