@@ -21,8 +21,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<?php include 'nav.php'; ?>
 	</header>
 	<section class="hero_section px-0 px-lg-5">
-		<div class="col-8 text-center mx-auto">
-			<h1 class="theme_text display-1">Car Relocation in India</h1>
+		<div class="col-10 col-sm-8 text-center mx-auto mt-4">
+			<h1 class="display-1 text-white" style="font-weight: 600;"><span class="theme_text">Car Relocation</span> in India</h1>
 		</div>
 		<div class="col-12 align-self-end">
 			<form action="" class="header_form pb-3">
@@ -66,33 +66,33 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<main>
 		<!-- how we work -->
 		<article class="container d-flex flex-column align-items-center py-50">
-			<h2 class="text-center theme_text col-sm-6">How we work at Car Relocation.</h2>
-			<div class="text-center col-sm-8">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
+			<h2 class="text-center col-sm-6 theme_heading mb-3">How we work at <span class="theme_text">Relocate My Car.</span></h2>
+			<div class="text-center col-sm-8 theme_sub_heading">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
 			<div class="steps">
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
 					</div>
 					<h3>Step 1</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus saepe obcaecati et repudiandae tenetur.</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
 					</div>
 					<h3>Step 2</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa illum est facilis, necessitatibus laboriosam!</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
 					</div>
 					<h3>Step 3</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamu sequi architecto quis voluptas aperiam maxime.</p>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="step_img">
-						<img src="<?php echo base_url('image/maintenance.png')?>" alt="img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
 					</div>
 					<h3>Step 4</h3>
 					<p class="step_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minima maiores sunt.</p>
@@ -103,8 +103,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<!-- intro -->
 		<article style="background-color: #f6f6f6;">
 			<div class="container d-flex flex-column align-items-center py-50">
-				<h2 class="text-center theme_text col-sm-6">Why Choose Car Relocation.</h2>
-				<div class="text-center col-sm-8">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
+				<h2 class="text-center col-sm-6 theme_heading mb-3">Why Choose <span class="theme_text">Relocate My Car.</span></h2>
+				<div class="text-center col-sm-8 theme_sub_heading">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
 				<p class="mt-5 article_first_letter">
 					At Car relocation, we take pride in our dedication to excellence and commitment to customer satisfaction. With years of experience in the industry, we've perfected the art of transporting vehicles safely and efficiently, whether it's across town or across the nation.
 					From the moment you choose us, you'll experience our personalized approach to car relocation. Our team of professionals will work closely with you to understand your specific needs and tailor our services accordingly. Whether you're a seasoned car enthusiast, a busy professional, or a family embarking on a new adventure, we've got you covered.
@@ -118,13 +118,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 		<!-- rate chart -->
 		<article class="container d-flex flex-column align-items-center py-50">
-			<h2 class="text-center theme_text col-sm-6">Get Moving: Check Out Our Rates</h2>
-			<div class="text-center col-sm-8">Discover the perfect fit for your budget! Our Transportation Rates section lays out all the details you need to know about moving your car hassle-free.</div>
+			<h2 class="theme_heading text-center col-sm-6 mb-3">Get Moving: Check Out Our <span class="theme_text">Rates</span></h2>
+			<div class="text-center col-sm-8 theme_sub_heading">Discover the perfect fit for your budget! Our Transportation Rates section lays out all the details you need to know about moving your car hassle-free.</div>
 
 			<div class="col-12 mt-5 table-responsive">
-				<table class="table table-primary table-striped table-hover shadow">
+				<table class="table table-striped table-hover shadow">
 					<thead>
-						<tr>
+						<tr class="table-primary">
 							<td><b>Distance</b></td>
 							<td><b>Type of vehicle</b></td>
 							<td><b>Mode of transportation</b></td>
@@ -304,12 +304,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</table>
 			</div>
 		</article>
-
+		<hr>
 		<!-- services -->
-		<article style="background-color: #f6f6f6; box-shadow: inset 0 0 16px -4px #000000">
+		<article>
 			<div class="px-1 px-md-3 px-lg-5 d-flex flex-column align-items-center py-50">
-				<h2 class="text-center theme_text col-sm-6">Ours Services</h2>
-				<div class="text-center col-sm-8 text-white">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
+				<h2 class="theme_heading text-center theme_text col-sm-6 mb-3">Ours Services</h2>
+				<div class="text-center col-sm-8 theme_sub_heading">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
 				<div class="services">
 					<div class="col-md-6 col-12">
 						<div class="service_card">
@@ -375,11 +375,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			</div>
 
 		</article>
-
+		<hr>
 		<!-- faq -->
 		<section class="container d-flex flex-column align-items-center py-50">
-			<h2 class="text-center theme_text col-sm-6">Frequently Asked Questions</h2>
-			<div class="text-center col-sm-8">Discover the perfect fit for your budget! Our Transportation Rates section lays out all the details you need to know about moving your car hassle-free.</div>
+		<h2 class="text-center theme_heading mb-3"><span class="theme_text">F</span>requently <span class="theme_text">A</span>sked <span class="theme_text">Q</span>uestions</h2>
+			<div class="text-center col-sm-8 theme_sub_heading">Discover the perfect fit for your budget! Our Transportation Rates section lays out all the details you need to know about moving your car hassle-free.</div>
 
 			<div>
 				<div class="faq_card">
@@ -440,48 +440,84 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</div>
 			</div>
 		</section>
-		
+
 		<div class="col-12 border-bottom"></div>
 		<!-- locations -->
 		<div style="background-color: #f6f6f6;">
 			<section class="container d-flex flex-column align-items-center py-50">
-				<h2 class="text-center theme_text col-sm-6">Where We Transport Vehicles</h2>
-				<div class="text-center col-sm-8">We transport vehicles nationwide, covering major cities, specialized routes, and remote areas for comprehensive relocation.</div>
+				<h2 class="theme_heading text-centercol-sm-6 mb-3">Where We <span class="theme_text">Transport</span> Vehicles</h2>
+				<div class="text-center col-sm-8 col-12 theme_sub_heading">We transport vehicles nationwide, covering major cities, specialized routes, and remote areas for comprehensive relocation.</div>
 				<div class="d-flex flex-wrap mt-5">
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Mumbai</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Delhi</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Kolkata</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Chennai</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Bangalore</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Hyderabad</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Ahmedabad</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Pune</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Surat</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Jaipur</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Lucknow</a>
 					</div>
 					<div class="location_link col-lg-3 col-md-6 col-12">
+						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+							<path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+						</svg>
 						<a href="<?php echo base_url('pages/location') ?>">packers and movers Kanpur</a>
 					</div>
 				</div>
@@ -490,19 +526,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	</main>
 	<footer class="text-center theme_bg">all copyright reserved @2024</footer>
 	<script>
-        const ques = document.querySelectorAll(".questions");
-        ques.forEach( e => {
-            e.addEventListener('click', () =>{
-                if(e.classList[1] !== 'open'){
-                    e.nextElementSibling.style.height = e.nextElementSibling.scrollHeight+25 +'px';
-                }else{
-                    e.nextElementSibling.style.height = 0 +'px';
-                }
-                e.classList.toggle('open');
-                e.nextElementSibling.classList.toggle('open');
-            })
-        })
-    </script>
+		const ques = document.querySelectorAll(".questions");
+		ques.forEach(e => {
+			e.addEventListener('click', () => {
+				ques.forEach(e2 => {
+					if (e2 !== e) {
+						e2.classList.remove('open');
+						e2.nextElementSibling.classList.remove('open');
+						e2.nextElementSibling.style.height = 0 + 'px';
+					}
+				});
+				if (e.classList[1] !== 'open') {
+					e.nextElementSibling.style.height = e.nextElementSibling.scrollHeight + 20 + 'px';
+				} else {
+					e.nextElementSibling.style.height = 0 + 'px';
+				}
+				e.classList.toggle('open');
+				e.nextElementSibling.classList.toggle('open');
+			})
+		})
+	</script>
 </body>
 
 </html>

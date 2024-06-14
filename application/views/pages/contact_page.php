@@ -52,51 +52,51 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <section class="container d-flex flex-wrap py-50">
             <div class="col-12 mx-auto mb-5 pb-3">
                 <p class="text-center col-12 mb-3 fw-bold fs-2 border-bottom">Head Office</p>
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <h4>City Name</h4>
-                    <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                    <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                     <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <p class="text-center col-12 mb-5 fw-bold fs-2 border-bottom pt-4">Other Office</p>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
-                <p class="col-8 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
+                <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                 <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
             </div>
         </section>

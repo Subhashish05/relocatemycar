@@ -1,10 +1,17 @@
 .hero_section{
     min-height: calc(100vh - 64px);
-    margin-top: 64px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background: #5f5e63;
+    background-image: linear-gradient(0deg, #6363637c 0%, #6363637c 100%),
+		url(../image/home_banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+@media (width < 540px) {
+    .hero_section{
+        margin-top: 64px;
+    }
 }
 .header_form{
     width: 90%;
@@ -54,10 +61,11 @@
 }
 .article_first_letter{
     text-align: justify;
-    color: #04252b;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 25px;
 }
 .article_first_letter::first-letter{
     font-size: 60px;
@@ -78,10 +86,9 @@
 }
 .service_card{
     padding: 25px 50px;
-    background: #fff;
+    background: #f0ffff;
     border-radius: 5px;
     overflow-x: hidden;
-    box-shadow: 0px 0px 12px #000000bb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +99,6 @@
     height: auto;
     object-position: center;
     object-fit: contain;
-    filter: drop-shadow(0 0 12px #3d3d3d);
 }
 .service_desc{
     display: flex;
@@ -102,8 +108,8 @@
 .service_desc > h4{
     text-align: center;
     width: 100%;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    color: var(--theme-color);
+    border-bottom: 1px solid #adadad;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -128,10 +134,10 @@
 .faq_card{
     margin: 25px auto;
     border-radius: 5px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #f0ffff;
 }
 .questions{
-    background: #f0f0f0;
+    background: #f0ffff;
     padding: 5px 15px;
     font-weight: 600;
     position: relative;
@@ -157,28 +163,15 @@
 .ans{
     height: 0px;
     overflow: hidden;
-    box-shadow: inset 0 0 12px #7a7a7a;
     background: #eeeeee75;
     transition: height 250ms ease;
 }
 .ans.open{
-    padding: 10px 15px 15px 25px;
+    padding: 10px;
 }
 .location_link{
     padding: 10px 15px;
-    position: relative;
-    color: #555;
-}
-.location_link::before{
-    content: "";
-    position: absolute;
-    border-radius: 8px;
-    height: 8px;
-    width: 8px;
-    background: #555;
-    top: 50%;
-    left: -2px;
-    transform: translateY(-50%);
+    color: #515151;
 }
 .location_link:hover > a{
     color: var(--theme-color);

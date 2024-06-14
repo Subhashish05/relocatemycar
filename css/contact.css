@@ -2,10 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5% 10%;
-    margin-top: 64px;
     min-height: calc(100vh - 64px);
     background: #555;
     color: #fff;
+}
+@media (width < 540px) {
+    .banner{
+        margin-top: 64px;
+    }
 }
 .banner_text{
     display: flex;

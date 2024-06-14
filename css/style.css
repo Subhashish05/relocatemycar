@@ -1,11 +1,22 @@
 :root{
-    --theme-color: #eb1424;
+    --theme-color: #0d6f8d;
     --highlight: #bdbdbd;
+}
+@font-face {
+    font-family: "BasierCircle";
+    src: url(BasierCircle.otf);
+}
+@font-face {
+    font-family: "BasierCircleSemiBold";
+    src: url(BasierCircleSemiBold.otf);
 }
 body{
     padding: 0%;
     margin: 0%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "BasierCircle";
+}
+.f_bold{
+    font-family: "BasierCircleSemiBold" !important;
 }
 ul{
     list-style-type: none;
@@ -38,6 +49,27 @@ p{
         padding-bottom: 50px;
     }
 }
+.theme_heading{
+    font-family: "BasierCircle";
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -2.32px;
+    font-style: normal;
+    line-height: 64px;
+    margin-bottom: 64px;
+    color: #1e2224;
+}
+.theme_sub_heading{
+    color: #363637d4;
+    font-weight: 700;
+}
+@media (width < 480px) {
+    .theme_heading{
+        font-size: 38px;
+        line-height: 52px;
+        margin-bottom: 50px;
+    }
+}
 .theme_underline{
     position: relative;
 }
@@ -56,11 +88,11 @@ p{
     border: none;
     outline: none;
     background: var(--theme-color);
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px;
 }
 .theme_btn:hover{
     background: var(--highlight);
@@ -99,7 +131,7 @@ nav > a{
     align-items: center;
 }
 nav > a > img{
-    height: 60px;
+    height: 50px;
     width: auto;
 }
 .nav_links{
@@ -122,7 +154,7 @@ nav > a > img{
     height: 2px;
     transition: all 250ms ease;
 }
-.nav_links > li > a:hover::after{
+.nav_links > li > a:hover::after, .nav_links > li > a.active::after{
     right: 0%;
     left: 0%;
 }

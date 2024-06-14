@@ -11,7 +11,7 @@ $date = date("Y-m-d");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location</title>
     <meta name="description" content="Best car relocation company in India">
-    <link rel="shortcut icon" href="<?php echo base_url('image/favicon.ico')?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base_url('image/favicon.ico') ?>" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css')  ?>">
     <link rel="stylesheet" href="<?php echo base_url('css/bootstrap-grid.min.css')  ?>">
     <link rel="stylesheet" href="<?php echo base_url('css/bootstrap-utilities.min.css')  ?>">
@@ -24,42 +24,69 @@ $date = date("Y-m-d");
         <?php include 'nav.php'; ?>
     </header>
     <main>
-        <section class="banner">
-            <div class="text-container py-50">
-                <h1>Best Car Relocation in Mumbai</h1>
+        <!-- banner -->
+        <section class="banner py-50">
+            <div class="text-container">
+                <div class="d-flex mb-3">
+                    <img src="<?php echo base_url('image/rating.png') ?>" alt="stars" style="width: 70px">
+                    <p class="ps-1 theme_sub_heading">Rated 4.6+ on Google Reviews</p>
+                </div>
+                <h1 class="f_bold" style="color: #192121">Best Car Relocation in <span class="theme_text">Mumbai</span></h1>
                 <p>Simplify car relocation with us! Trust our dedicated team for safe, efficient transport. Say goodbye
                     to stress, hello to peace of mind!</p>
             </div>
-            <form class="p-2">
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <label for="origin" class="form-label d-none">Origin</label>
-                    <input type="text" name="origin" id="origin" class="form-control" placeholder="Enter Origin">
+            <div class="btn_container">
+                <div class="col-8 col-md-6 col-lg-2 p-2">
+                    <button class="theme_btn w-100 rounded-2 border border-2 py-3 px-2" type="button">Get Quote</button>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <label for="destination" class="form-label d-none">Destination</label>
-                    <input type="text" name="destination" id="destination" class="form-control"
-                        placeholder="Enter Destination">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <label for="date" class="form-label d-none">Date</label>
-                    <input type="date" name="date" id="date" class="form-control" placeholder="Enter Model" value="<?php echo $date; ?>">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <label for="name" class="form-label d-none">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <label for="mobile" class="form-label d-none">Mobile</label>
-                    <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Enter Mobile">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
-                    <button class="theme_btn w-100 rounded-2 border border-2">Submit</button>
-                </div>
-            </form>
+            </div>
         </section>
 
+        <div class="video_container">
+            <div class="play-btn-container">
+                <img alt="play" width="48px" height="48px" loading="lazy" title="Play Video" class="play-btn" src="<?php echo base_url('image/play-button.png') ?>">
+            </div>
+        </div>
+
+        <!-- how we work -->
+		<section class="container d-flex flex-column align-items-center py-50">
+			<h2 class="text-center col-sm-6 theme_heading mb-3">How we work at <span class="theme_text">Relocate My Car.</span></h2>
+			<div class="text-center col-sm-8 mb-5 theme_sub_heading">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
+			<div class="steps">
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="step_img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
+					</div>
+					<h3 class="fw-bold">Step 1</h3>
+					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus saepe obcaecati et repudiandae tenetur.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="step_img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
+					</div>
+					<h3 class="fw-bold">Step 2</h3>
+					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa illum est facilis, necessitatibus laboriosam!</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="step_img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
+					</div>
+					<h3 class="fw-bold">Step 3</h3>
+					<p class="step_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamu sequi architecto quis voluptas aperiam maxime.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="step_img">
+						<img src="<?php echo base_url('image/maintenance.png') ?>" alt="img">
+					</div>
+					<h3 class="fw-bold">Step 4</h3>
+					<p class="step_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minima maiores sunt.</p>
+				</div>
+			</div>
+		</section>
+
+        <!-- main article -->
         <article class="py-50 container">
-            <h3 class="text-center fw-bold">Your Seamless Car Transport Solutions</h3>
+            <h3 class="text-center theme_heading">Your Seamless <span class="theme_text">Car Transport</span> Solutions</h3>
             <p class="text_justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel soluta
                 eveniet quis quam sunt itaque similique quo quos. Et totam error corporis quaerat ipsa sed, aliquam
                 assumenda ut quas autem neque porro omnis est architecto? Blanditiis voluptates exercitationem
@@ -70,102 +97,433 @@ $date = date("Y-m-d");
                 quis, doloribus libero vero suscipit doloremque.</p>
         </article>
 
-        <article class="review py-50 px-4 d-flex flex-wrap">
-            <h3 class="text-center fw-bold col-12 mb-5">Some words from our happy customers!</h3>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-                <div class="d-flex px-3">
-                    <div class="col-3 review_img">A</div>
-                    <div class="col-9 ps-3 fs-4">Alpha</div>
+        <!-- review -->
+        <article class="review py-50 px-5">
+            <h3 class="text-center theme_heading col-12 mb-5">Some words from our <span class="text-white">happy customers!</span></h3>
+            <button type="button" class="prev" aria-label="previous button" data-prev="" title="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><path fill="#ffffff" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </button>
+            <div class="review_container">
+                <div class="reviews" data-review="" style="left: 0%;">
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jhon Deo</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit assumenda
+                            corrupti debitis minus ex doloribus sed provident? Quas excepturi illum laborum,"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">R</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Ram Kumar</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab nulla
+                            quae quam officia esse, quisquam sequi necessitatibus quidem elige"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jay Singh</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga accusantium
+                            ducimus, nobis expedita quae dignissimos. Sint voluptatum quos aspernatur tenetur"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">D</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Devi Roy</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore commodi
+                            suscipit impedit! Consequatur rerum architecto ipsam culpa voluptatem nemo qui a"</p>
+                    </div>
+
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jhon Deo</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit assumenda
+                            corrupti debitis minus ex doloribus sed provident? Quas excepturi illum laborum,"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">R</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Ram Kumar</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab nulla
+                            quae quam officia esse, quisquam sequi necessitatibus quidem elige"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jay Singh</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga accusantium
+                            ducimus, nobis expedita quae dignissimos. Sint voluptatum quos aspernatur tenetur"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">D</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Devi Roy</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore commodi
+                            suscipit impedit! Consequatur rerum architecto ipsam culpa voluptatem nemo qui a"</p>
+                    </div>
+
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jhon Deo</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit assumenda
+                            corrupti debitis minus ex doloribus sed provident? Quas excepturi illum laborum,"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">R</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Ram Kumar</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab nulla
+                            quae quam officia esse, quisquam sequi necessitatibus quidem elige"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">J</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Jay Singh</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga accusantium
+                            ducimus, nobis expedita quae dignissimos. Sint voluptatum quos aspernatur tenetur"</p>
+                    </div>
+                    <div class="review_card">
+                        <div class="d-flex px-3 pt-3">
+                            <div class="col-3 review_img">D</div>
+                            <div class="col-9 ps-3 fs-4 text-white">Devi Roy</div>
+                        </div>
+                        <p class="p-3 pt-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore commodi
+                            suscipit impedit! Consequatur rerum architecto ipsam culpa voluptatem nemo qui a"</p>
+                    </div>
                 </div>
-                <p class="p-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit assumenda
-                    corrupti debitis minus ex doloribus sed provident? Quas excepturi illum laborum,"</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-                <div class="d-flex px-3">
-                    <div class="col-3 review_img">B</div>
-                    <div class="col-9 ps-3 fs-4">Beta</div>
-                </div>
-                <p class="p-2 review_txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab nulla
-                    quae quam officia esse, quisquam sequi necessitatibus quidem elige"</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-                <div class="d-flex px-3">
-                    <div class="col-3 review_img">C</div>
-                    <div class="col-9 ps-3 fs-4">Charli</div>
-                </div>
-                <p class="p-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga accusantium
-                    ducimus, nobis expedita quae dignissimos. Sint voluptatum quos aspernatur tenetur"</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-3">
-                <div class="d-flex px-3">
-                    <div class="col-3 review_img">D</div>
-                    <div class="col-9 ps-3 fs-4">Delta</div>
-                </div>
-                <p class="p-2 review_txt">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore commodi
-                    suscipit impedit! Consequatur rerum architecto ipsam culpa voluptatem nemo qui a"</p>
-            </div>
+            <button type="button" class="next" aria-label="next button" data-next="" title="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><path fill="#ffffff" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </button>
+            <script>
+                const a = document.querySelector('[data-review]');
+                const b = (window.innerWidth - 100);
+                for (let i = 0; i < a.children.length; i++) {
+                    a.children[i].style.width = b / 2 +"px" ;
+                }
+                
+                let i = 0;
+                const c = a.children.length / 2 - 1;
+                document.querySelector('[data-next]').addEventListener('click', () =>{
+                    if( i > -b * c){
+                        i-= b;
+                        a.style.left = i + "px";
+                    }
+                });
+                document.querySelector('[data-prev]').addEventListener('click', () =>{
+                    if(i < 0){
+                        i+= b;
+                        a.style.left = i + "px";
+                    }
+                });
+            </script>
         </article>
-        <section class="container py-50 border-top">
-            <h3 class="fw-bold">Car Relocation Services Near You</h3>
-            <p class="ps-2 mt-3">Relocation at your Locality</p>
+
+        <!-- location -->
+        <section class="py-50 border-top mx-sm-2 mx-lg-5">
+            <h3 class="theme_heading text-center">Car <span class="theme_text">Relocation Services</span> Near You</h3>
+            <h5 class="ps-2 my-3 border-bottom">Relocation at your Locality</h5>
             <div class="d-flex flex-wrap ps-2">
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Bandra</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Bhandup</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Borivali</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Chembur</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Colaba</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Dadar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Dahisar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Ghatkopar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Jogeshwari</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kalwa</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kanjurmarg</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon East</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali East</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kurla</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Lower Parel</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Juhu</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Vile Parle</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Virar West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Malad East</div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Bandra</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Bhandup</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Borivali</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Chembur</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Colaba</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Dadar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Dahisar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Ghatkopar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Jogeshwari</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kalwa</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kanjurmarg</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon East</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali East</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kurla</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Lower Parel</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Juhu</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Vile Parle</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Virar West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Malad East</span>
+                </div>
             </div>
 
-            <p class="ps-2 mt-5">Relocation at other Cities</p>
+            <h5 class="ps-2 mt-5 mb-3 border-bottom">Relocation at other Cities</h5>
             <div class="d-flex flex-wrap ps-2">
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Bandra</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Bhandup</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Borivali</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Chembur</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Colaba</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Dadar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Dahisar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Ghatkopar</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Jogeshwari</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kalwa</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kanjurmarg</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon East</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Goregaon West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali East</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kandivali West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Kurla</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Lower Parel</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Juhu</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Vile Parle</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Virar West</div>
-                <div class="col-lg-3 col-md-6 col-12 location">Packers And Movers In Malad East</div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Bandra</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Bhandup</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Borivali</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Chembur</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Colaba</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Dadar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Dahisar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Ghatkopar</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Jogeshwari</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kalwa</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kanjurmarg</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon East</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Goregaon West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali East</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kandivali West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Kurla</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Lower Parel</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Juhu</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Vile Parle</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Virar West</span>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>Packers And Movers In Malad East</span>
+                </div>
             </div>
         </section>
 
         <!-- faq -->
-        <section class="container d-flex flex-column align-items-center py-50">
-            <h2 class="text-center theme_text col-sm-6">Frequently Asked Questions</h2>
-            <div class="text-center col-sm-8">Discover the perfect fit for your budget! Our Transportation Rates section
+        <section class="container d-flex flex-column align-items-center py-50 faq">
+            <h2 class="text-center theme_heading"><span class="theme_text">F</span>requently <span class="theme_text">A</span>sked <span class="theme_text">Q</span>uestions</h2>
+            <div class="text-center col-sm-8 mt-2 mb-4">Discover the perfect fit for your budget! Our Transportation Rates section
                 lays out all the details you need to know about moving your car hassle-free.</div>
 
             <div>
@@ -247,21 +605,67 @@ $date = date("Y-m-d");
                 </div>
             </div>
         </section>
+
+        <!-- blog -->
+        <section class="blog py-50">
+            <h2 class="theme_heading text-center">Check out our latest <span class="theme_text">blog</span>!</h2>
+            <div class="d-flex flex-wrap px-5">
+                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                    <div class="blog_card">
+                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                    <div class="blog_card">
+                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                    <div class="blog_card">
+                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                    <div class="blog_card">
+                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="text-center theme_bg">all copyright reserved @2024</footer>
     <script>
-    const ques = document.querySelectorAll(".questions");
-    ques.forEach(e => {
-        e.addEventListener('click', () => {
-            if (e.classList[1] !== 'open') {
-                e.nextElementSibling.style.height = e.nextElementSibling.scrollHeight + 25 + 'px';
-            } else {
-                e.nextElementSibling.style.height = 0 + 'px';
-            }
-            e.classList.toggle('open');
-            e.nextElementSibling.classList.toggle('open');
+        const ques = document.querySelectorAll(".questions");
+        ques.forEach(e => {
+            e.addEventListener('click', () => {
+                ques.forEach(e2 => {
+                    if (e2 !== e) {
+                        e2.classList.remove('open');
+                        e2.nextElementSibling.classList.remove('open');
+                        e2.nextElementSibling.style.height = 0 + 'px';
+                    }
+                });
+                if (e.classList[1] !== 'open') {
+                    e.nextElementSibling.style.height = e.nextElementSibling.scrollHeight + 20 + 'px';
+                } else {
+                    e.nextElementSibling.style.height = 0 + 'px';
+                }
+                e.classList.toggle('open');
+                e.nextElementSibling.classList.toggle('open');
+            })
         })
-    })
     </script>
 </body>
 
