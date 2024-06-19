@@ -25,31 +25,29 @@ $date = date("Y-m-d");
     </header>
     <main>
         <!-- banner -->
-        <section class="banner py-50">
+        <section class="banner py-50 px-50">
             <div class="text-container">
                 <div class="d-flex mb-3">
                     <img src="<?php echo base_url('image/rating.png') ?>" alt="stars" style="width: 70px">
                     <p class="ps-1 theme_sub_heading">Rated 4.6+ on Google Reviews</p>
                 </div>
-                <h1 class="f_bold" style="color: #192121">Best Car Relocation in <span class="theme_text">Mumbai</span></h1>
-                <p>Simplify car relocation with us! Trust our dedicated team for safe, efficient transport. Say goodbye
-                    to stress, hello to peace of mind!</p>
+                <h1 class="f_bold" style="color: #192121">Best Car Relocation in <br><span class="theme_text">Mumbai</span></h1>
+                <p>Simplify car relocation with us! Trust our dedicated team for safe, <br> 
+                    efficient transport. Say goodbye to stress, hello to peace of mind!</p>
             </div>
             <div class="btn_container">
-                <div class="col-8 col-md-6 col-lg-2 p-2">
-                    <button class="theme_btn w-100 rounded-2 border border-2 py-3 px-2" type="button">Get Quote</button>
-                </div>
+                <button class="get_quote_btn" type="button">Get Quote</button>
             </div>
         </section>
 
-        <div class="video_container">
+        <div class="video_container px-50">
             <div class="play-btn-container">
                 <img alt="play" width="48px" height="48px" loading="lazy" title="Play Video" class="play-btn" src="<?php echo base_url('image/play-button.png') ?>">
             </div>
         </div>
 
         <!-- how we work -->
-		<section class="container d-flex flex-column align-items-center py-50">
+		<section class="d-flex flex-column align-items-center py-50 px-50">
 			<h2 class="text-center col-sm-6 theme_heading mb-3">How we work at <span class="theme_text">Relocate My Car.</span></h2>
 			<div class="text-center col-sm-8 mb-5 theme_sub_heading">We’re a professional local moving company created to move more than just your boxes. We’ll move you with our hard work and genuine smiles.</div>
 			<div class="steps">
@@ -85,7 +83,7 @@ $date = date("Y-m-d");
 		</section>
 
         <!-- main article -->
-        <article class="py-50 container">
+        <article class="py-50 px-50">
             <h3 class="text-center theme_heading">Your Seamless <span class="theme_text">Car Transport</span> Solutions</h3>
             <p class="text_justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel soluta
                 eveniet quis quam sunt itaque similique quo quos. Et totam error corporis quaerat ipsa sed, aliquam
@@ -98,7 +96,7 @@ $date = date("Y-m-d");
         </article>
 
         <!-- review -->
-        <article class="review py-50 px-5">
+        <article class="review py-50 px-50">
             <h3 class="text-center theme_heading col-12 mb-5">Some words from our <span class="text-white">happy customers!</span></h3>
             <button type="button" class="prev" aria-label="previous button" data-prev="" title="Previous">
             <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><path fill="#ffffff" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -210,9 +208,17 @@ $date = date("Y-m-d");
             </button>
             <script>
                 const a = document.querySelector('[data-review]');
-                const b = (window.innerWidth - 100);
-                for (let i = 0; i < a.children.length; i++) {
-                    a.children[i].style.width = b / 2 +"px" ;
+                let b = 0;
+                if(window.innerWidth > 480){
+                    b = (window.innerWidth - 100);
+                    for (let i = 0; i < a.children.length; i++) {
+                        a.children[i].style.width = b / 2 +"px" ;
+                    }
+                }else{
+                    b = (window.innerWidth - 50);
+                    for (let i = 0; i < a.children.length; i++) {
+                        a.children[i].style.width = b +"px" ;
+                    }
                 }
                 
                 let i = 0;
@@ -233,302 +239,302 @@ $date = date("Y-m-d");
         </article>
 
         <!-- location -->
-        <section class="py-50 border-top mx-sm-2 mx-lg-5">
+        <section class="py-50 border-top px-50">
             <h3 class="theme_heading text-center">Car <span class="theme_text">Relocation Services</span> Near You</h3>
-            <h5 class="ps-2 my-3 border-bottom">Relocation at your Locality</h5>
-            <div class="d-flex flex-wrap ps-2">
+            <h5 class="ps-2 my-3 theme_sub_heading">Relocation at your Locality</h5>
+            <div class="d-flex flex-wrap">
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Bandra</span>
+                    <a href="" alt="service location">Packers And Movers In Bandra</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Bhandup</span>
+                    <a href="" alt="service location">Packers And Movers In Bhandup</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Borivali</span>
+                    <a href="" alt="service location">Packers And Movers In Borivali</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Chembur</span>
+                    <a href="" alt="service location">Packers And Movers In Chembur</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Colaba</span>
+                    <a href="" alt="service location">Packers And Movers In Colaba</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Dadar</span>
+                    <a href="" alt="service location">Packers And Movers In Dadar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Dahisar</span>
+                    <a href="" alt="service location">Packers And Movers In Dahisar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Ghatkopar</span>
+                    <a href="" alt="service location">Packers And Movers In Ghatkopar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Jogeshwari</span>
+                    <a href="" alt="service location">Packers And Movers In Jogeshwari</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kalwa</span>
+                    <a href="" alt="service location">Packers And Movers In Kalwa</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kanjurmarg</span>
+                    <a href="" alt="service location">Packers And Movers In Kanjurmarg</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon East</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon East</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon West</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali East</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali East</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali West</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kurla</span>
+                    <a href="" alt="service location">Packers And Movers In Kurla</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Lower Parel</span>
+                    <a href="" alt="service location">Packers And Movers In Lower Parel</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Juhu</span>
+                    <a href="" alt="service location">Packers And Movers In Juhu</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Vile Parle</span>
+                    <a href="" alt="service location">Packers And Movers In Vile Parle</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Virar West</span>
+                    <a href="" alt="service location">Packers And Movers In Virar West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Malad East</span>
+                    <a href="" alt="service location">Packers And Movers In Malad East</a>
                 </div>
             </div>
 
-            <h5 class="ps-2 mt-5 mb-3 border-bottom">Relocation at other Cities</h5>
-            <div class="d-flex flex-wrap ps-2">
+            <h5 class="ps-2 mt-5 mb-3 theme_sub_heading">Relocation at other Cities</h5>
+            <div class="d-flex flex-wrap">
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Bandra</span>
+                    <a href="" alt="service location">Packers And Movers In Bandra</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Bhandup</span>
+                    <a href="" alt="service location">Packers And Movers In Bhandup</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Borivali</span>
+                    <a href="" alt="service location">Packers And Movers In Borivali</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Chembur</span>
+                    <a href="" alt="service location">Packers And Movers In Chembur</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Colaba</span>
+                    <a href="" alt="service location">Packers And Movers In Colaba</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Dadar</span>
+                    <a href="" alt="service location">Packers And Movers In Dadar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Dahisar</span>
+                    <a href="" alt="service location">Packers And Movers In Dahisar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Ghatkopar</span>
+                    <a href="" alt="service location">Packers And Movers In Ghatkopar</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Jogeshwari</span>
+                    <a href="" alt="service location">Packers And Movers In Jogeshwari</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kalwa</span>
+                    <a href="" alt="service location">Packers And Movers In Kalwa</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kanjurmarg</span>
+                    <a href="" alt="service location">Packers And Movers In Kanjurmarg</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon East</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon East</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Goregaon West</span>
+                    <a href="" alt="service location">Packers And Movers In Goregaon West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali East</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali East</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kandivali West</span>
+                    <a href="" alt="service location">Packers And Movers In Kandivali West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Kurla</span>
+                    <a href="" alt="service location">Packers And Movers In Kurla</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Lower Parel</span>
+                    <a href="" alt="service location">Packers And Movers In Lower Parel</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Juhu</span>
+                    <a href="" alt="service location">Packers And Movers In Juhu</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Vile Parle</span>
+                    <a href="" alt="service location">Packers And Movers In Vile Parle</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Virar West</span>
+                    <a href="" alt="service location">Packers And Movers In Virar West</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12 location">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
-                        <path fill="#0d6f8b" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        <path fill="#0D9298" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <span>Packers And Movers In Malad East</span>
+                    <a href="" alt="service location">Packers And Movers In Malad East</a>
                 </div>
             </div>
         </section>
 
         <!-- faq -->
-        <section class="container d-flex flex-column align-items-center py-50 faq">
+        <section class="d-flex flex-column align-items-center py-50 px-50 faq" style="background-color: #f1f7fd;">
             <h2 class="text-center theme_heading"><span class="theme_text">F</span>requently <span class="theme_text">A</span>sked <span class="theme_text">Q</span>uestions</h2>
-            <div class="text-center col-sm-8 mt-2 mb-4">Discover the perfect fit for your budget! Our Transportation Rates section
+            <div class="text-center col-sm-8 mt-2 mb-4 theme_sub_heading">Discover the perfect fit for your budget! Our Transportation Rates section
                 lays out all the details you need to know about moving your car hassle-free.</div>
 
             <div>
                 <div class="faq_card">
-                    <div class="questions">Why would I need car relocation services?</div>
+                    <div class="questions"><p>Why would I need car relocation services?</p></div>
                     <div class="ans">
                         There are several reasons why you might need to relocate a car:
                         <ul>
@@ -540,14 +546,14 @@ $date = date("Y-m-d");
                     </div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">What is car relocation?</div>
+                    <div class="questions"><p>What is car relocation?</p></div>
                     <div class="ans">Car relocation typically involves hiring a professional auto transport company.
                         Once you provide details about your car and desired destination, the company will give you a
                         quote and schedule a pickup. They'll transport your car using either an open or enclosed
                         trailer, depending on your preference and budget.</div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">How long does car relocation take?</div>
+                    <div class="questions"><p>How long does car relocation take?</p></div>
                     <div class="ans">The time it takes to relocate a car depends on several factors, including the
                         distance, the transport company's schedule, and any unforeseen delays like weather or road
                         conditions. Generally, it can take anywhere from a few days to a couple of weeks for domestic
@@ -555,13 +561,13 @@ $date = date("Y-m-d");
                         factors.</div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">Is my car insured during relocation?</div>
+                    <div class="questions"><p>Is my car insured during relocation?</p></div>
                     <div class="ans">Most reputable auto transport companies provide insurance coverage for the vehicles
                         they transport. However, it's essential to clarify the extent of coverage with the company
                         before shipping your car and consider purchasing additional insurance if necessary.</div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">How should I prepare my car for relocation?</div>
+                    <div class="questions"><p>How should I prepare my car for relocation?</p></div>
                     <div class="ans">Here are some essential steps to prepare your car for relocation:
                         <ul>
                             <li>1. Wash your car and document any existing damage with photographs.</li>
@@ -574,29 +580,27 @@ $date = date("Y-m-d");
                     </div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">How much does car relocation cost?
-
-                    </div>
+                    <div class="questions"><p>How much does car relocation cost?</p></div>
                     <div class="ans">The cost of car relocation varies depending on factors such as the distance, the
                         type of vehicle, the transport method (open or enclosed trailer), and the time of year. You can
                         request quotes from multiple auto transport companies to compare prices and services.
                     </div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">Can I track my car during relocation?</div>
+                    <div class="questions"><p>Can I track my car during relocation?</p></div>
                     <div class="ans">Many auto transport companies offer tracking services that allow you to monitor the
                         progress of your car shipment online or via mobile app. This provides peace of mind and allows
                         you to stay informed about your car's whereabouts throughout the relocation process.</div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">Can I ship multiple cars at once?</div>
+                    <div class="questions"><p>Can I ship multiple cars at once?</p></div>
                     <div class="ans">Yes, most auto transport companies can accommodate shipping multiple cars at once,
                         either on the same trailer or on separate trailers depending on your needs and the company's
                         capabilities. However, shipping multiple cars together may affect the overall cost and delivery
                         timeline.</div>
                 </div>
                 <div class="faq_card">
-                    <div class="questions">What should I do if there are issues with my car upon delivery?</div>
+                    <div class="questions"><p>What should I do if there are issues with my car upon delivery?</p></div>
                     <div class="ans">Upon delivery, carefully inspect your car for any new damage or discrepancies
                         compared to the documentation you provided before shipment. If you notice any issues, document
                         them thoroughly and report them to the auto transport company immediately. They should work with
@@ -607,39 +611,39 @@ $date = date("Y-m-d");
         </section>
 
         <!-- blog -->
-        <section class="blog py-50">
+        <section class="blog py-50 px-50">
             <h2 class="theme_heading text-center">Check out our latest <span class="theme_text">blog</span>!</h2>
-            <div class="d-flex flex-wrap px-5">
-                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
                     <div class="blog_card">
                         <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
                         <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="more_btn" alt="read more">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
                     <div class="blog_card">
                         <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
                         <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="more_btn" alt="read more">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
                     <div class="blog_card">
                         <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
                         <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="more_btn" alt="read more">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-3 px-3">
+                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
                     <div class="blog_card">
                         <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
                         <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="theme_btn rounded-2 ms-3">Read More</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
+                        <a href="" class="more_btn" alt="read more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -653,7 +657,6 @@ $date = date("Y-m-d");
                 ques.forEach(e2 => {
                     if (e2 !== e) {
                         e2.classList.remove('open');
-                        e2.nextElementSibling.classList.remove('open');
                         e2.nextElementSibling.style.height = 0 + 'px';
                     }
                 });
@@ -663,7 +666,6 @@ $date = date("Y-m-d");
                     e.nextElementSibling.style.height = 0 + 'px';
                 }
                 e.classList.toggle('open');
-                e.nextElementSibling.classList.toggle('open');
             })
         })
     </script>

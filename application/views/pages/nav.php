@@ -1,4 +1,4 @@
-<nav>
+<nav class="px-50">
     <a href="<?php echo base_url("pages/home")  ?>">
         <img src="<?php echo base_url("image/logo.png")  ?>" alt="logo">
     </a>
@@ -14,7 +14,9 @@
         <span></span>
     </div>
     <div class="mobile_nav_link" data-mobile_nav_link="">
-        <img src="<?php echo base_url("image/logo.png") ?>" alt="logo" style="width: 90%; height: auto;">
+        <div class="w-100 text-center" style="background-color: #222d2d;">
+            <img src="<?php echo base_url("image/logo.png") ?>" alt="logo" style="width: 90%; height: auto; margin: 4% auto;">
+        </div>
         <ul class="mobile_nav_links">
             <li><a href="<?php echo base_url("pages/home")  ?>">Home</a></li>
             <li><a href="<?php echo base_url("pages/location")  ?>">Location</a></li>

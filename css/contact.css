@@ -1,7 +1,6 @@
 .banner{
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 10%;
     min-height: calc(100vh - 64px);
     background: #555;
     color: #fff;
@@ -17,15 +16,16 @@
 }
 .banner_text > *{
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .banner > .heading{
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 72px;
+	font-weight: 500;
+	letter-spacing: -2.88px;
+	line-height: 75px;
+	margin:0 auto 40px;
     width: 50%;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    margin: 0 auto 40px;
 }
 .banner_text i{
     width: 40px;

@@ -1,5 +1,5 @@
 :root{
-    --theme-color: #0d6f8d;
+    --theme-color: #0D9298;
     --highlight: #bdbdbd;
 }
 @font-face {
@@ -43,10 +43,18 @@ p{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 @media (width < 768px) {
     .py-50{
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .px-50{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 .theme_heading{
@@ -65,9 +73,14 @@ p{
 }
 @media (width < 480px) {
     .theme_heading{
-        font-size: 38px;
-        line-height: 52px;
+        font-size: 34px;
+        line-height: 42px;
+        letter-spacing: -1.36px;
         margin-bottom: 50px;
+    }
+    .theme_sub_heading{
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 .theme_underline{
@@ -138,7 +151,7 @@ nav > a > img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 10px;
     flex: 0 1 400px;
 }
 .nav_links > li > a {
@@ -190,28 +203,29 @@ nav > a > img{
     .mobile_nav > span{
         display: block;
         position: relative;
-        width: 30px;
-        height: 4px;
+        width: 27px;
+        height: 3px;
         background: var(--theme-color);
-        margin-bottom: 4px;
-        border-radius: 20rem;
+        margin: 2.5px auto;
         transition: all 250ms linear;
     }
     .mobile_nav.cross > span:nth-child(1){
-        transform: rotateZ(45deg) translateY(11px);
+        transform: rotateZ(45deg) translate(7px, 7px);
+        width: 30px;
     }
     .mobile_nav.cross > span:nth-child(2){
         width: 0px;
     }
     .mobile_nav.cross > span:nth-child(3){
-        transform: rotateZ(-45deg) translateY(-11px);
+        transform: rotateZ(-45deg) translate(4px, -4px);
+        width: 30px;
     }
     .mobile_nav_link{
         display: block;
         position: fixed;
-        width: clamp(300px, 50vw, 360px);
+        width: clamp(250px, 40vw, 300px);
         height: 100vh;
-        background: #f8f7f7;
+        background: #293636;
         top: 0;
         left: -100%;
         transition: left 500ms ease-in-out;
@@ -220,27 +234,20 @@ nav > a > img{
         left: 0;
         box-shadow: 12px 0px 20px #00000023;
     }
-    .mobile_nav_link > p{
-        height: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 26px;
-        color: var(--theme-color);
-    }
     .mobile_nav_links{
-        border-top: 1px solid #555;
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--theme-color);
+        border-top: 1px solid #55555533;
+        font-size: 16px;
+        font-weight: 600;
     }
     .mobile_nav_links > li{
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid #55555533;
     }
     .mobile_nav_links > li > a{
-        padding: 15px;
         display: block;
+        padding: 15px 10px 15px 30px;
+        font-size: 14px;
+        color: #ececec;
+        cursor: pointer;
     }
 }
 .nav_links > li{
@@ -251,4 +258,22 @@ nav > a > img{
 }
 header{
     min-height: 64px;
+}
+.more_btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	width: 110px;
+	height: 44px;
+	font-size: 12px;
+	color: #fff;
+	background: var(--theme-color);
+	margin: 20px 20px;
+}
+@media (width < 768px) {
+    .more_btn{
+        width: 100px;
+        height: 36px;
+    }
 }

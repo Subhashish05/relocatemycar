@@ -20,8 +20,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <?php include 'nav.php'; ?>
     </header>
     <main>
-        <section class="banner py-50">
-            <div class="heading">Contact Us</div>
+        <section class="banner py-50 px-50">
+            <div class="heading f_bold">Contact Us</div>
             <div class="banner_text col-12 col-md-8">
                 <a href="mailto:support@relocatemycar.com"><i class="fa fa-envelope"></i> support@relocatemycar.com</a>
                 <a href="tel:911234567890"><i class="fa fa-mobile"></i> +91-1234567890 </a>
@@ -49,16 +49,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </section>
 
-        <section class="container d-flex flex-wrap py-50">
+        <section class="d-flex flex-wrap py-50 px-50">
             <div class="col-12 mx-auto mb-5 pb-3">
-                <p class="text-center col-12 mb-3 fw-bold fs-2 border-bottom">Head Office</p>
+                <p class="text-center col-12 theme_heading border-bottom">Head Office</p>
                 <div class="col-lg-6 col-12">
                     <h4>City Name</h4>
                     <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
                     <a href="" class="text-primary">Get Direction <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
-            <p class="text-center col-12 mb-5 fw-bold fs-2 border-bottom pt-4">Other Office</p>
+            <p class="text-center col-12 mb-5 theme_heading pt-4">Other Office</p>
             <div class="col-12 col-md-6 mb-4">
                 <h4>City Name</h4>
                 <p class="col-lg-8 col-12 text_justify mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, iste possimus recusandae itaque ratione</p>
