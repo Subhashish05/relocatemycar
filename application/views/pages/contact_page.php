@@ -101,6 +101,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </section>
     </main>
-    <footer class="text-center theme_bg">all copyright reserved @2024</footer>
+    <?php include 'footer.php'; ?>
 </body>
 </html>

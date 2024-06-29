@@ -23,6 +23,39 @@ $date = date("Y-m-d");
     <header>
         <?php include 'nav.php'; ?>
     </header>
+    <section class="pop_up_form" data-popUp="">
+        <form action="" method="post">
+            <h3 class="text-center theme_sub_heading border-bottom theme_text">Get Quote</h3>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div>
+                <label for="mobile">Mobile</label>
+                <input type="text" name="mobile" id="mobile" class="form-control">
+            </div>
+            <div>
+                <label for="car">Car Type</label>
+                <input type="text" name="car" id="car" class="form-control">
+            </div>
+            <div>
+                <label for="origin">Origin</label>
+                <input type="text" name="origin" id="origin" class="form-control">
+            </div>
+            <div>
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" id="destination" class="form-control">
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="theme_btn rounded-3 px-5 py-2 w-100">Submit</button>
+            </div>
+            <button type="button" onclick="closePopUp()">&#10006</button>
+        </form>
+    </section>
     <main>
         <!-- banner -->
         <section class="banner py-50 px-50">
@@ -36,7 +69,7 @@ $date = date("Y-m-d");
                     efficient transport. Say goodbye to stress, hello to peace of mind!</p>
             </div>
             <div class="btn_container">
-                <button class="get_quote_btn" type="button">Get Quote</button>
+                <button class="get_quote_btn" type="button" onclick="openPopUp()">Get Quote</button>
             </div>
         </section>
 
@@ -649,7 +682,7 @@ $date = date("Y-m-d");
             </div>
         </section>
     </main>
-    <footer class="text-center theme_bg">all copyright reserved @2024</footer>
+    <?php include 'footer.php'; ?>
     <script>
         const ques = document.querySelectorAll(".questions");
         ques.forEach(e => {
@@ -667,7 +700,16 @@ $date = date("Y-m-d");
                 }
                 e.classList.toggle('open');
             })
-        })
+        });
+
+        const form = document.querySelector('[data-popUp]');
+        function openPopUp(){
+            form.classList.add('show');
+        }
+        function closePopUp(){
+            form.classList.remove('show');
+        }
+
     </script>
 </body>
 

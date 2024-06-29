@@ -1,3 +1,53 @@
+.body{
+	position: relative;
+}
+.pop_up_form{
+	display: none;
+}
+.pop_up_form.show{
+	position: fixed;
+	inset: 0;
+	background: #00000050;
+	backdrop-filter: blur(5px);
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pop_up_form > form{
+	position: relative;
+	padding: 15px 30px;
+	background: #fff;
+	border: 2px solid var(--theme-color);
+	border-radius: 10px;
+	width: clamp(300px, 95%, 400px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pop_up_form > form > button{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-weight: 700;
+	padding: 4px 11px;
+	text-align: center;
+	border-radius: 50%;
+	color: var(--theme-color);
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
+.pop_up_form > form > div{
+	margin: 5px auto;
+	width: 100%;
+}
+.pop_up_form > form > div > label{
+	font-weight: 600;
+	color: #00000090;
+	display: block;
+	width: 100%;
+}
 .banner {
 	width: 100%;
 	min-height: calc(100vh - 64px);

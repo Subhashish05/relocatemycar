@@ -1,12 +1,12 @@
 <nav class="px-50">
-    <a href="<?php echo base_url("pages/home")  ?>">
+    <a href="<?php echo base_url("")  ?>">
         <img src="<?php echo base_url("image/logo.png")  ?>" alt="logo">
     </a>
     <ul class="nav_links">
-        <li><a href="<?php echo base_url("pages/home")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 25, ) == "home" ? "active" : ""); ?>" >Home</a></li>
-        <li><a href="<?php echo base_url("pages/location")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 25, ) == "location" ? "active" : ""); ?>">Location</a></li>
-        <li><a href="<?php echo base_url("pages/about")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 25, ) == "about" ? "active" : ""); ?>">About</a></li>
-        <li><a href="<?php echo base_url("pages/contact")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 25, ) == "contact" ? "active" : ""); ?>">Contact</a></li>
+        <li><a href="<?php echo base_url("")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 19, ) == "" ? "active" : ""); ?>" >Home</a></li>
+        <li><a href="<?php echo base_url("location")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 19, ) == "location" ? "active" : ""); ?>">Location</a></li>
+        <li><a href="<?php echo base_url("about")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 19, ) == "about" ? "active" : ""); ?>">About</a></li>
+        <li><a href="<?php echo base_url("contact")  ?>" class="<?php echo (substr($_SERVER['REQUEST_URI'], 19, ) == "contact" ? "active" : ""); ?>">Contact</a></li>
     </ul>
     <div class="mobile_nav" data-mobile_nav="">
         <span></span>
@@ -18,10 +18,10 @@
             <img src="<?php echo base_url("image/logo.png") ?>" alt="logo" style="width: 90%; height: auto; margin: 4% auto;">
         </div>
         <ul class="mobile_nav_links">
-            <li><a href="<?php echo base_url("pages/home")  ?>">Home</a></li>
-            <li><a href="<?php echo base_url("pages/location")  ?>">Location</a></li>
-            <li><a href="<?php echo base_url("pages/about")  ?>">About</a></li>
-            <li><a href="<?php echo base_url("pages/contact")  ?>">Contact</a></li>
+            <li><a href="<?php echo base_url("")  ?>">Home</a></li>
+            <li><a href="<?php echo base_url("location")  ?>">Location</a></li>
+            <li><a href="<?php echo base_url("about")  ?>">About</a></li>
+            <li><a href="<?php echo base_url("contact")  ?>">Contact</a></li>
         </ul>
     </div>
     <script>

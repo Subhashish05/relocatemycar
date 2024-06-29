@@ -24,7 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<!-- hero section -->
 	<section class="hero_section px-50">
 		<div class="mt-4 text-center">
-			<h1 class="home_heading f_bold" style="color: #fff;">Best <span class="theme_text">Car Relocation</span><br> in India</h1style=>
+			<h1 class="home_heading f_bold theme_text">Best Car Relocation <br> in India</h1>
 		</div>
 		<div class="col-12 align-self-end">
 			<form action="" class="header_form pb-3">
@@ -522,7 +522,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			</div>
 		</section>
 	</main>
-	<footer class="text-center theme_bg">all copyright reserved @2024</footer>
+	<?php include 'footer.php'; ?>
 	<script>
 		const ques = document.querySelectorAll(".questions");
 		ques.forEach(e => {
