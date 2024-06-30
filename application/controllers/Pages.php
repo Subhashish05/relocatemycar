@@ -22,9 +22,21 @@ class Pages extends CI_Controller {
 	{
 		$this->load->view('pages/contact_page');
 	}
-	public function blog()
+	public function blog($str = 1)
 	{
-		$this->load->view('pages/blog_page');
+		if(strlen($str) <= 3){
+			$data['iteration'] = $str;
+			$data['total'] = 36;
+			if(($str > $data['total']/9)){
+				show_404();
+			}else{
+				$this->load->view('pages/blog_page', $data);
+			}
+		}
+		if(strlen($str) > 3){
+			$data['str'] = $str;
+			$this->load->view('pages/blog_review_page', $data);
+		}
 	}
 	public function gallery($iteration_img = 1, $iteration_vid = 1)
 	{

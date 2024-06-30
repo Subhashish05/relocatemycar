@@ -22,6 +22,10 @@
             <li><a href="<?php echo base_url("location")  ?>">Location</a></li>
             <li><a href="<?php echo base_url("about")  ?>">About</a></li>
             <li><a href="<?php echo base_url("contact")  ?>">Contact</a></li>
+            <li><a href="<?php echo base_url("gallery")  ?>">Gallery</a></li>
+            <li><a href="<?php echo base_url("blog")  ?>">Blog</a></li>
+            <li><a href="<?php echo base_url("review")  ?>">Review</a></li>
+            <li><a href="<?php echo base_url("sitemap")  ?>">Sitemap</a></li>
         </ul>
     </div>
     <script>

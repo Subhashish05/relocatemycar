@@ -646,38 +646,66 @@ $date = date("Y-m-d");
         <!-- blog -->
         <section class="blog py-50 px-50">
             <h2 class="theme_heading text-center">Check out our latest <span class="theme_text">blog</span>!</h2>
-            <div class="d-flex flex-wrap">
-                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
-                    <div class="blog_card">
-                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
-                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="more_btn" alt="read more">Read More</a>
-                    </div>
+            <div class="d-flex flex-wrap row-cols-lg-3 row-cols-md-2 row-cols-1">
+                <div class="py-5 px-md-2 px-lg-3">
+                    <a href="<?php echo base_url('blog/get-your-car-relocated');?>" class="blog_card">
+                        <div class="blog_thumbnail mb-3">
+                            <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        </div>
+                        <small class="theme_text ps-3">Location</small>
+                        <p class="blog_heading ps-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed.</p>
+                        <div class="author_info">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                                <p class="ms-1">Blog Writer</p>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+                                <p class="ms-1">01/Jan/2000</p>
+                            </span>
+                        </div>
+                        <button type="button" class="more_btn">Read More</button>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
-                    <div class="blog_card">
-                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
-                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="more_btn" alt="read more">Read More</a>
-                    </div>
+                <div class="py-5 px-md-2 px-lg-3">
+                    <a href="<?php echo base_url('blog/get-your-car-relocated');?>" class="blog_card">
+                        <div class="blog_thumbnail mb-3">
+                            <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        </div>
+                        <small class="theme_text ps-3">Location</small>
+                        <p class="blog_heading ps-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed.</p>
+                        <div class="author_info">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                                <p class="ms-1">Blog Writer</p>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+                                <p class="ms-1">01/Jan/2000</p>
+                            </span>
+                        </div>
+                        <button type="button" class="more_btn">Read More</button>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
-                    <div class="blog_card">
-                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
-                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="more_btn" alt="read more">Read More</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-2 col-12 py-5 px-lg-3">
-                    <div class="blog_card">
-                        <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
-                        <h4 class="theme_text">Lorem ipsum dolor sit amet consectetur...</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa accusantium nobis voluptate odit! Aliquam error repellendus quisquam accusamus aspernatur at odit, qui voluptate earum deserunt, laborum ea. Quod, voluptates.</p>
-                        <a href="" class="more_btn" alt="read more">Read More</a>
-                    </div>
+                <div class="py-5 px-md-2 px-lg-3">
+                    <a href="<?php echo base_url('blog/get-your-car-relocated');?>" class="blog_card">
+                        <div class="blog_thumbnail mb-3">
+                            <img src="<?php echo base_url('image/blog.png') ?>" alt="blog_thumbnail" >
+                        </div>
+                        <small class="theme_text ps-3">Location</small>
+                        <p class="blog_heading ps-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed.</p>
+                        <div class="author_info">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                                <p class="ms-1">Blog Writer</p>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="12" viewBox="0 0 448 512"><path fill="#4f6173" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+                                <p class="ms-1">01/Jan/2000</p>
+                            </span>
+                        </div>
+                        <button type="button" class="more_btn">Read More</button>
+                    </a>
                 </div>
             </div>
         </section>

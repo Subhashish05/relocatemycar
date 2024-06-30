@@ -49,13 +49,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
         }
 
         .pagination {
+            margin: 40px auto 0;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-
-        button {
+        .pagination > *{
+            margin-top: 20px;
+        }
+        .pagination > span {
+            flex: 1 1 10px;
+        }
+        .pagination button {
             background: var(--theme-color);
             color: #fff;
             border: none;
@@ -65,7 +70,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             border-radius: 5px;
         }
 
-        button:disabled {
+        .pagination button:disabled {
             background: #aaa;
         }
     </style>
@@ -76,7 +81,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <?php include 'nav.php'; ?>
     </header>
     <main>
-        <section style="height: 250px; background: #555" class="py-50">
+        <section style="background: #555" class="py-50">
             <h1 class="top_banner_text">Gallery</h1>
         </section>
         <section class="px-50 py-50 position-relative">
@@ -100,26 +105,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 ?>
             </div>
             <div class="pagination">
-                <div>
-                    <a href="<?php echo base_url('pages/gallery/' . ($iteration_img - 1) . '/' . $current_vid) ?>"><button <?php echo ($iteration_img > 1 ? '' : 'disabled') ?>>prev</button></a>
-                </div>
-                <div>
-                    <?php
-                    $times = 0;
-                    $j = $iteration_img;
-                    if ($j + 5 > $total_img / $num_img) {
-                        $j = (($total_img / $num_img - 4 > 0 )? ($total_img / $num_img - 4) : 1);
-                    }
-                    while ($times < 5 && $j <= $total_img / $num_img) {
-                        $times++;
-                        echo '<a href="' . base_url('pages/gallery/' . $j . '/' . $current_vid) . '" class="mx-2"><button>' . $j . '</button></a>';
-                        $j++;
-                    }
-                    ?>
-                </div>
-                <div>
-                    <a href="<?php echo base_url('pages/gallery/' . ($iteration_img + 1) . '/' . $current_vid) ?>"><button <?php echo (($iteration_img < $total_img / $num_img) ? '' : 'disabled') ?>>next</button></a>
-                </div>
+                <a href="<?php echo base_url('pages/gallery/' . ($iteration_img - 1) . '/' . $current_vid) ?>"><button <?php echo ($iteration_img > 1 ? '' : 'disabled') ?>>prev</button></a>
+                <span></span>
+                <?php
+                $times = 0;
+                $j = $iteration_img;
+                if ($j + 5 > $total_img / $num_img) {
+                    $j = (($total_img / $num_img - 4 > 0) ? ($total_img / $num_img - 4) : 1);
+                }
+                while ($times < 5 && $j <= $total_img / $num_img) {
+                    $times++;
+                    echo '<a href="' . base_url('pages/gallery/' . $j . '/' . $current_vid) . '" class="mx-2"><button>' . $j . '</button></a>';
+                    $j++;
+                }
+                ?>
+                <span></span>
+                <a href="<?php echo base_url('pages/gallery/' . ($iteration_img + 1) . '/' . $current_vid) ?>"><button <?php echo (($iteration_img < $total_img / $num_img) ? '' : 'disabled') ?>>next</button></a>
             </div>
         </section>
 
@@ -143,25 +144,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 ?>
             </div>
             <div class="pagination">
-                <div>
-                    <a href="<?php echo base_url('pages/gallery/' . $current_img . '/' . $iteration_vid - 1) ?>"><button <?php echo ($iteration_vid > 1 ? '' : 'disabled') ?>>prev</button></a>
-                </div>
-                <div>
-                    <?php
-                    $times2 = 0;
-                    if ($k + 3 > $total_vid / $num_vid) {
-                        $k = (($total_vid / $num_vid - 2 > 0)? ($total_vid / $num_vid - 2) : 1);
-                    }
-                    while ($times2 < 5 && $k <= $total_vid / $num_vid) {
-                        $times2++;
-                        echo '<a href="' . base_url('pages/gallery/' . $current_img . '/' . $k) . '" class="mx-2"><button>' . $k . '</button></a>';
-                        $k++;
-                    }
-                    ?>
-                </div>
-                <div>
-                    <a href="<?php echo base_url('pages/gallery/' . $current_img . '/' . $iteration_vid + 1) ?>"><button <?php echo (($iteration_vid < $total_vid / $num_vid) ? '' : 'disabled') ?>>next</button></a>
-                </div>
+                <a href="<?php echo base_url('pages/gallery/' . $current_img . '/' . $iteration_vid - 1) ?>"><button <?php echo ($iteration_vid > 1 ? '' : 'disabled') ?>>prev</button></a>
+                <span></span>
+                <?php
+                $times2 = 0;
+                if ($k + 3 > $total_vid / $num_vid) {
+                    $k = (($total_vid / $num_vid - 2 > 0) ? ($total_vid / $num_vid - 2) : 1);
+                }
+                while ($times2 < 5 && $k <= $total_vid / $num_vid) {
+                    $times2++;
+                    echo '<a href="' . base_url('pages/gallery/' . $current_img . '/' . $k) . '" class="mx-2"><button>' . $k . '</button></a>';
+                    $k++;
+                }
+                ?>
+                <span></span>
+                <a href="<?php echo base_url('pages/gallery/' . $current_img . '/' . $iteration_vid + 1) ?>"><button <?php echo (($iteration_vid < $total_vid / $num_vid) ? '' : 'disabled') ?>>next</button></a>
             </div>
         </section>
     </main>

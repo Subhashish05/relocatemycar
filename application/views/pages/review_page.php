@@ -21,7 +21,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <?php include 'nav.php'; ?>
     </header>
     <main>
-        <section style="height: 250px; background: #555" class="py-50">
+        <section style="background: #555" class="py-50">
             <h1 class="top_banner_text">Review</h1>
         </section>
         <section class="px-50 py-50 position-relative">
@@ -37,17 +37,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="review_card">
                                 <div class="reviewer_name">
                                     <div class="me-3">
-                                        <div class="img_placeholder">'.substr('Jhon Doe', 0,1).'</div>
+                                        <div class="img_placeholder">' . substr('Jhon Doe', 0, 1) . '</div>
                                         <!-- <img src="" alt="profile image"> -->
                                     </div>
                                     <div class="col-auto">
                                         <p class="reviewer">Jhon Doe</p>
                                         <div>
-                                            <span>'.$star.'</span>
-                                            <span>'.$star.'</span>
-                                            <span>'.$star.'</span>
-                                            <span>'.$star.'</span>
-                                            <span>'.$holo_star.'</span>
+                                            <span>' . $star . '</span>
+                                            <span>' . $star . '</span>
+                                            <span>' . $star . '</span>
+                                            <span>' . $star . '</span>
+                                            <span>' . $holo_star . '</span>
                                         </div>
                                     </div>
                                 </div>
@@ -62,26 +62,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 ?>
             </div>
             <div class="pagination">
-                <div>
-                    <a href="<?php echo base_url('pages/review/' . ($iteration - 1)) ?>"><button <?php echo ($iteration > 1 ? '' : 'disabled') ?>>prev</button></a>
-                </div>
-                <div>
-                    <?php
-                    $times = 0;
-                    $j = $iteration;
-                    if ($j + 5 > $total / $num) {
-                        $j = (($total / $num - 3 > 0) ? ($total / $num - 3) : 1);
-                    }
-                    while ($times < 5 && $j <= $total / $num) {
-                        $times++;
-                        echo '<a href="' . base_url('pages/review/' . $j) . '" class="mx-2"><button>' . $j . '</button></a>';
-                        $j++;
-                    }
-                    ?>
-                </div>
-                <div>
-                    <a href="<?php echo base_url('pages/review/' . ($iteration + 1)) ?>"><button <?php echo (($iteration < $total / $num) ? '' : 'disabled') ?>>next</button></a>
-                </div>
+                <a href="<?php echo base_url('review/' . ($iteration - 1)) ?>"><button <?php echo ($iteration > 1 ? '' : 'disabled') ?>>prev</button></a>
+                <span></span>
+                <?php
+                $times = 0;
+                $j = $iteration;
+                if ($j + 5 > $total / $num) {
+                    $j = (($total / $num - 3 > 0) ? ($total / $num - 3) : 1);
+                }
+                while ($times < 5 && $j <= $total / $num) {
+                    $times++;
+                    echo '<a href="' . base_url('review/' . $j) . '" class="mx-2"><button>' . $j . '</button></a>';
+                    $j++;
+                }
+                ?>
+                <span></span>
+                <a href="<?php echo base_url('review/' . ($iteration + 1)) ?>"><button <?php echo (($iteration < $total / $num) ? '' : 'disabled') ?>>next</button></a>
             </div>
         </section>
     </main>

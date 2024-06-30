@@ -31,7 +31,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <?php include 'nav.php'; ?>
     </header>
     <main>
-        <section style="height: 250px; background: #555" class="py-50">
+        <section style="background: #555" class="py-50">
             <h1 class="top_banner_text">About Us</h1>
         </section>
         <section class="px-50 py-50">

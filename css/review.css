@@ -74,11 +74,16 @@
 }
 .pagination {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
-
+.pagination > *{
+    margin-top: 20px;
+}
+.pagination > span{
+    flex: 1 1 10px;
+}
 .pagination button {
     background: var(--theme-color);
     color: #fff;

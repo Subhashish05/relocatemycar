@@ -1,0 +1,129 @@
+.breadcrumb{
+    font-size: 14px;
+    color: var(--theme-color);
+    display: flex;
+    align-items: center;
+}
+.breadcrumb > *{
+    margin-right: 5px;
+}
+.author_info {
+    color: #4f6173;
+    font-size: 14px;
+    height: 21px;
+}
+
+@media (width <= 768px) {
+    .author_info {
+        font-size: 12px;
+    }
+}
+
+.author_info > span > svg {
+    margin-right: 2px;
+}
+.blog_heading{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #3a3a3a;
+    padding: 20px 0 40px;
+}
+.blog_thumbnail > img{
+    width: 100%;
+    aspect-ratio: 1.91/1;
+}
+article{
+    padding: 20px 0 40px;
+}
+article > h3{
+    color: var(--theme-color);
+    font-size: 24px;
+    line-height: 1.44em;
+    font-weight: 600;
+    padding: 20px 0 15px;
+    margin-bottom: 0;
+}
+article > p{
+    width: 90%;
+}
+.comment_section > *:not(div){
+    width: 100%;
+    margin: 10px 0;
+    padding: 13px;
+    font-size: 16px;
+    border:1px solid #bababa;
+    outline: none;
+}
+.comment_section > *:focus{
+    border: 1px dotted #555;
+}
+.table_content{
+    position: sticky;
+    top: 64px;
+    padding: 20px 0;
+}
+
+.table_content > ul>li{
+    list-style-type: disc;
+    margin-left: 40px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #54595f;
+}
+@media (width <= 768px) {
+    .table_content{
+        position: static;
+        background: #eee;
+        padding: 20px;
+    }
+    .table_content > ul>li{
+        color: #000;
+    }
+}
+.blog_card {
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+}
+.blog_thumbnail2 > img {
+    width: 100%;
+    aspect-ratio: 1.91/1;
+}
+.blog_heading2 {
+    color: #3a3a3a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    line-height: 27px;
+    margin: 1rem 0;
+}
+@media (width < 768px) {
+    .blog_heading2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.author_info2 {
+    color: #4f6173;
+    font-size: 14px;
+    padding-left: 1rem;
+}
+
+@media (width < 768px) {
+    .author_info2 {
+        font-size: 12px;
+    }
+}
+
+.author_info2>span {
+    display: inline-flex;
+    margin-right: 1.5rem;
+}
+
+.author_info2>span>svg {
+    margin-right: 5px;
+}

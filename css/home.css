@@ -228,3 +228,42 @@
 .location:hover {
 	color: var(--theme-color);
 }
+.blog_card {
+	display: inline-block;
+	position: relative;
+	border-radius: 5px;
+}
+.blog_thumbnail > img {
+	width: 100%;
+	aspect-ratio: 1.91/1;
+}
+.blog_heading {
+	color: #3a3a3a;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	height: auto;
+	line-height: 27px;
+	margin: 1rem 0;
+}
+.author_info{
+	color: #4f6173; 
+	font-size: 14px; 
+	padding-left: 1rem;
+}
+@media (width < 768px) {
+	.blog_heading{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.author_info{
+		font-size: 12px;
+	}
+}
+.author_info > span{
+	display: inline-flex;	
+	margin-right: 1.5rem;
+}
+.author_info > span > svg{
+	margin-right: 5px;
+}
